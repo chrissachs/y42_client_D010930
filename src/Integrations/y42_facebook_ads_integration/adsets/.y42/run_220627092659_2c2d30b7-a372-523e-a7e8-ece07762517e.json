@@ -1,6 +1,6 @@
 {
   "request_id": "220627092659_2c2d30b7-a372-523e-a7e8-ece07762517e",
-  "status": "pending",
+  "status": "ready",
   "request": {
     "source_credentials": "df48b916-a65f-492b-9a97-203bbc437a58",
     "target_credentials": "9e4724f2-17f4-4d65-ab73-125bd4185044",
@@ -52,7 +52,36 @@
     "write_disposition": "TRUNCATE",
     "external_id": "01a53977-0101-4b57-0001-2c920036454e",
     "storage_file": "azure://y42snowflake.blob.core.windows.net/y42-container/userUploads/v2/tap-facebook-datos/cd9e5680-9851-4c85-90d1-faa138bf0e84",
-    "partial": false
+    "partial": false,
+    "import_finished_at": "2022-06-27T09:27:35.868077+00:00",
+    "row_count": 9,
+    "current_import_row_count": 9,
+    "size_in_bytes": 2560,
+    "columns": [
+      {
+        "field_name": "name",
+        "data_type": "STRING",
+        "external_data_type": "TEXT"
+      },
+      {
+        "field_name": "daily_budget",
+        "data_type": "FLOAT",
+        "external_data_type": "FLOAT"
+      },
+      {
+        "field_name": "budget_remaining",
+        "data_type": "FLOAT",
+        "external_data_type": "FLOAT"
+      },
+      {
+        "field_name": "id",
+        "data_type": "STRING",
+        "external_data_type": "TEXT"
+      }
+    ],
+    "table_name": "220627092659_2c2d30b7-a372-523e-a7e8-ece07762517e",
+    "external_url": "https://leailmf-bb09357.snowflakecomputing.com/console#/data/tables/detail?databaseName=Y42_DATA&schemaName=PUBLIC&tableName=220627092659_2c2d30b7-a372-523e-a7e8-ece07762517e"
   },
-  "_signature": "efTsh0hAkslUAUMkUKq2nndz4Q1BoW2CORynHQ3Y46OYUhWb8sYVMle9moeKWsULpexG76Jlr5t0ePPXouZhAA=="
+  "finished_at": "2022-06-27T09:27:35.868399+00:00",
+  "_signature": "XiGwGQT/5z/XBEyruNPOAytyTcHMss0MBqVbS63r01Vl2ox9K/VAuvTs6CxakfS/m4wIlSd+mNB3AGs5YXDUBw=="
 }

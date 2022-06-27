@@ -1,0 +1,200 @@
+{
+  "request_id": "220627092658_67d4965a-fafc-57d5-b436-dc81c1a5501f",
+  "status": "ready",
+  "request": {
+    "source_credentials": "df48b916-a65f-492b-9a97-203bbc437a58",
+    "target_credentials": "9e4724f2-17f4-4d65-ab73-125bd4185044",
+    "source_settings": {
+      "$schema": "https://s.y42.com/integrations/facebook/0.0.0/source.json",
+      "parent_id": "10202752914758478",
+      "start_date": "2022-01-01T00:00:00Z"
+    },
+    "table_settings": {
+      "$schema": "https://s.y42.com/integrations/facebook/0.0.0/table",
+      "columns": [
+        "account_id",
+        "ad_id",
+        "adset_id",
+        "campaign_id",
+        "campaign_name",
+        "clicks",
+        "cost_per_inline_link_click",
+        "cost_per_inline_post_engagement",
+        "cost_per_unique_click",
+        "cost_per_unique_inline_link_click",
+        "date_start",
+        "frequency",
+        "impressions",
+        "inline_link_clicks",
+        "inline_post_engagement",
+        "reach",
+        "spend",
+        "unique_clicks",
+        "unique_inline_link_clicks",
+        "publisher_platform",
+        "platform_position",
+        "impression_device"
+      ],
+      "import": "ads_insights_platform_and_device"
+    },
+    "created_at": "2022-06-27T09:26:58.134966+00:00",
+    "target": {
+      "storage": {
+        "type": "githubapp",
+        "path": "/src/Integrations/y42_facebook_ads_integration/ads_insights_platform_and_device/",
+        "id": "5:a04b3d64-5225-4ac5-bf44-a30cd0c901f5",
+        "branch": "main"
+      },
+      "info": {
+        "app_id": "25917863",
+        "owner": "Group-Online-collaboration",
+        "repo": "y42_client_D010930",
+        "commit_sha": "b93ebe8f4213fa8ed7dc38ce4cfaeefb824e826e"
+      }
+    },
+    "context": {
+      "company_id": 5,
+      "company_slug": "grouponline",
+      "triggered_by_type": "user",
+      "triggered_by_id": "32",
+      "trial": false
+    }
+  },
+  "created_at": "2022-06-27T09:26:58.134966+00:00",
+  "details": {
+    "invalid_rows": 0,
+    "export_finished_at": "2022-06-27T09:27:40.638396+00:00",
+    "external_state": {
+      "bookmarks": {
+        "ads_insights_platform_and_device": {
+          "date_start": "2022-06-27"
+        }
+      },
+      "schema_hash": "c740add5ce5198584d454b56582410fd"
+    },
+    "write_disposition": "TRUNCATE",
+    "external_id": "01a53977-0101-4e10-0001-2c9200366012",
+    "storage_file": "azure://y42snowflake.blob.core.windows.net/y42-container/userUploads/v2/tap-facebook-datos/7aed8912-45a2-4d3a-9d2e-2bead50a8cc5",
+    "partial": false,
+    "import_finished_at": "2022-06-27T09:27:53.107365+00:00",
+    "row_count": 2739,
+    "current_import_row_count": 2739,
+    "size_in_bytes": 66560,
+    "columns": [
+      {
+        "field_name": "impression_device",
+        "data_type": "STRING",
+        "external_data_type": "TEXT"
+      },
+      {
+        "field_name": "clicks",
+        "data_type": "FLOAT",
+        "external_data_type": "NUMBER"
+      },
+      {
+        "field_name": "cost_per_inline_link_click",
+        "data_type": "FLOAT",
+        "external_data_type": "FLOAT"
+      },
+      {
+        "field_name": "inline_link_clicks",
+        "data_type": "FLOAT",
+        "external_data_type": "NUMBER"
+      },
+      {
+        "field_name": "publisher_platform",
+        "data_type": "STRING",
+        "external_data_type": "TEXT"
+      },
+      {
+        "field_name": "cost_per_inline_post_engagement",
+        "data_type": "FLOAT",
+        "external_data_type": "FLOAT"
+      },
+      {
+        "field_name": "unique_clicks",
+        "data_type": "FLOAT",
+        "external_data_type": "NUMBER"
+      },
+      {
+        "field_name": "ad_id",
+        "data_type": "STRING",
+        "external_data_type": "TEXT"
+      },
+      {
+        "field_name": "frequency",
+        "data_type": "FLOAT",
+        "external_data_type": "FLOAT"
+      },
+      {
+        "field_name": "campaign_name",
+        "data_type": "STRING",
+        "external_data_type": "TEXT"
+      },
+      {
+        "field_name": "spend",
+        "data_type": "FLOAT",
+        "external_data_type": "FLOAT"
+      },
+      {
+        "field_name": "account_id",
+        "data_type": "FLOAT",
+        "external_data_type": "NUMBER"
+      },
+      {
+        "field_name": "inline_post_engagement",
+        "data_type": "FLOAT",
+        "external_data_type": "FLOAT"
+      },
+      {
+        "field_name": "impressions",
+        "data_type": "FLOAT",
+        "external_data_type": "NUMBER"
+      },
+      {
+        "field_name": "cost_per_unique_inline_link_click",
+        "data_type": "FLOAT",
+        "external_data_type": "FLOAT"
+      },
+      {
+        "field_name": "adset_id",
+        "data_type": "FLOAT",
+        "external_data_type": "NUMBER"
+      },
+      {
+        "field_name": "platform_position",
+        "data_type": "STRING",
+        "external_data_type": "TEXT"
+      },
+      {
+        "field_name": "cost_per_unique_click",
+        "data_type": "FLOAT",
+        "external_data_type": "FLOAT"
+      },
+      {
+        "field_name": "reach",
+        "data_type": "FLOAT",
+        "external_data_type": "NUMBER"
+      },
+      {
+        "field_name": "unique_inline_link_clicks",
+        "data_type": "FLOAT",
+        "external_data_type": "NUMBER"
+      },
+      {
+        "field_name": "campaign_id",
+        "data_type": "STRING",
+        "external_data_type": "TEXT"
+      },
+      {
+        "field_name": "date_start",
+        "data_type": "TIMESTAMP",
+        "external_data_type": "TIMESTAMP_NTZ"
+      }
+    ],
+    "table_name": "220627092658_67d4965a-fafc-57d5-b436-dc81c1a5501f",
+    "external_url": "https://leailmf-bb09357.snowflakecomputing.com/console#/data/tables/detail?databaseName=Y42_DATA&schemaName=PUBLIC&tableName=220627092658_67d4965a-fafc-57d5-b436-dc81c1a5501f"
+  },
+  "finished_at": "2022-06-27T09:27:53.107529+00:00",
+  "_signature": "DFPkwkUDZWvAm4qOQY93ZeXDTsAvu1GWy6Ah/5LesTRGE2LNFhH9QgaYA1qMEfwGY3nYtI0Z5+Za3akIMr56Cw=="
+}

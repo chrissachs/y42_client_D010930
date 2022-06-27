@@ -1,0 +1,87 @@
+{
+  "request_id": "220627092659_2c2d30b7-a372-523e-a7e8-ece07762517e",
+  "status": "ready",
+  "request": {
+    "source_credentials": "df48b916-a65f-492b-9a97-203bbc437a58",
+    "target_credentials": "9e4724f2-17f4-4d65-ab73-125bd4185044",
+    "source_settings": {
+      "$schema": "https://s.y42.com/integrations/facebook/0.0.0/source.json",
+      "parent_id": "10202752914758478",
+      "start_date": "2022-01-01T00:00:00Z"
+    },
+    "table_settings": {
+      "$schema": "https://s.y42.com/integrations/facebook/0.0.0/table",
+      "columns": [
+        "name",
+        "id",
+        "daily_budget",
+        "budget_remaining"
+      ],
+      "import": "adsets"
+    },
+    "created_at": "2022-06-27T09:26:59.203925+00:00",
+    "target": {
+      "storage": {
+        "type": "githubapp",
+        "path": "/src/Integrations/y42_facebook_ads_integration/adsets/",
+        "id": "5:a04b3d64-5225-4ac5-bf44-a30cd0c901f5",
+        "branch": "main"
+      },
+      "info": {
+        "app_id": "25917863",
+        "owner": "Group-Online-collaboration",
+        "repo": "y42_client_D010930",
+        "commit_sha": "b93ebe8f4213fa8ed7dc38ce4cfaeefb824e826e"
+      }
+    },
+    "context": {
+      "company_id": 5,
+      "company_slug": "grouponline",
+      "triggered_by_type": "user",
+      "triggered_by_id": "32",
+      "trial": false
+    }
+  },
+  "created_at": "2022-06-27T09:26:59.203925+00:00",
+  "details": {
+    "invalid_rows": 0,
+    "export_finished_at": "2022-06-27T09:27:18.576570+00:00",
+    "external_state": {
+      "schema_hash": "1c93131e2d728efa425ad73e4d612a58"
+    },
+    "write_disposition": "TRUNCATE",
+    "external_id": "01a53977-0101-4b57-0001-2c920036454e",
+    "storage_file": "azure://y42snowflake.blob.core.windows.net/y42-container/userUploads/v2/tap-facebook-datos/cd9e5680-9851-4c85-90d1-faa138bf0e84",
+    "partial": false,
+    "import_finished_at": "2022-06-27T09:27:35.868077+00:00",
+    "row_count": 9,
+    "current_import_row_count": 9,
+    "size_in_bytes": 2560,
+    "columns": [
+      {
+        "field_name": "name",
+        "data_type": "STRING",
+        "external_data_type": "TEXT"
+      },
+      {
+        "field_name": "daily_budget",
+        "data_type": "FLOAT",
+        "external_data_type": "FLOAT"
+      },
+      {
+        "field_name": "budget_remaining",
+        "data_type": "FLOAT",
+        "external_data_type": "FLOAT"
+      },
+      {
+        "field_name": "id",
+        "data_type": "STRING",
+        "external_data_type": "TEXT"
+      }
+    ],
+    "table_name": "220627092659_2c2d30b7-a372-523e-a7e8-ece07762517e",
+    "external_url": "https://leailmf-bb09357.snowflakecomputing.com/console#/data/tables/detail?databaseName=Y42_DATA&schemaName=PUBLIC&tableName=220627092659_2c2d30b7-a372-523e-a7e8-ece07762517e"
+  },
+  "finished_at": "2022-06-27T09:27:35.868399+00:00",
+  "_signature": "XiGwGQT/5z/XBEyruNPOAytyTcHMss0MBqVbS63r01Vl2ox9K/VAuvTs6CxakfS/m4wIlSd+mNB3AGs5YXDUBw=="
+}
